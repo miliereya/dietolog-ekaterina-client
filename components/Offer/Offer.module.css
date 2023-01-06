@@ -1,0 +1,207 @@
+.section {
+    background: var(--color-back-primary);
+    padding-bottom: 90px;
+    position: relative;
+}
+
+.heading {
+    padding-top: 77px;
+    font-size: 110px;
+}
+
+.heading span {
+    line-height: 165px;
+    letter-spacing: 0.02em;
+    color: var(--color-span);
+    opacity: 0.8;
+    font-family: 'mr_HamiltoneG';
+}
+
+.post_heading {
+    font-size: 26px;
+    line-height: 32px;
+    letter-spacing: 0.02em;
+    color: var(--color-span);
+}
+
+.decsription {
+    width: 525px;
+    margin-top: 80px;
+    margin-bottom: 70px;
+    font-size: 18px;
+    line-height: 150%;
+    letter-spacing: 0.02em;
+}
+
+.background_1 {
+    position: absolute;
+    top: -87px;
+}
+
+.background_2_border,
+.background_2 {
+    position: absolute;
+    width: 660px;
+    height: 660px;
+    top: 190px;
+    border-radius: 505px 0px 0px 0px;
+    z-index: 3;
+}
+
+.background_2_border {
+    right: 25px;
+    border: 1px solid var(--color-border);
+    z-index: 3;
+}
+
+.background_2 {
+    margin-top: 25px;
+    right: 0;
+}
+
+@media (max-width: 1130px) {
+
+    .background_2_border,
+    .background_2 {
+        width: 475px;
+        height: 475px;
+        top: 340px;
+    }
+}
+
+@media (max-width: 855px) {
+    .heading {
+        font-size: 92px;
+    }
+
+    .decsription {
+        margin-top: 50px;
+        margin-bottom: 75px;
+    }
+
+    .background_1 {
+        width: 500px;
+        height: 725px;
+        top: -50px;
+    }
+}
+
+@media (max-width: 768px) {
+    .background_2 {
+        margin-top: 15px;
+    }
+
+    .background_2_border,
+    .background_2 {
+        width: 360px;
+        height: 360px;
+        top: 350px;
+    }
+}
+
+@media (max-width: 725px) {
+
+    .heading span,
+    .heading {
+        font-size: 82px;
+        line-height: 120px;
+    }
+
+    .decsription {
+        width: 420px;
+        font-size: 16px;
+    }
+
+    .post_heading {
+        font-size: 24px;
+    }
+}
+
+@media (max-width: 650px) {
+    .section {
+        padding-bottom: 60px;
+    }
+
+    .heading {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .heading span {
+        font-size: 100px;
+    }
+
+    .post_heading {
+        margin-top: 20px;
+        font-size: 30px;
+    }
+
+    .last_name {
+        text-align: right;
+    }
+
+    .decsription {
+        margin-top: 35px;
+    }
+
+    .background_2,
+    .background_2_border {
+        top: 550px;
+        width: 286px;
+        height: 286px;
+    }
+}
+
+@media (max-width: 500px) {
+
+    .background_2,
+    .background_2_border {
+        top: 580px;
+        width: 236px;
+        height: 236px;
+    }
+
+    .heading span {
+        font-size: 80px;
+        line-height: 112px;
+    }
+
+    .background_1 {
+        width: 300px;
+        height: 525px;
+        top: -5px;
+    }
+
+    .post_heading {
+        width: 322px;
+        font-size: 24px;
+        line-height: 136%;
+    }
+
+    .decsription {
+        width: 100%;
+        font-size: 13px;
+        line-height: 136%;
+    }
+
+}
+
+@media (max-width: 425px) {
+    .heading {
+        padding-top: 30px;
+    }
+    .heading span {
+        font-size: 60px;
+        line-height: 70px;
+    }
+
+    .background_2,
+    .background_2_border {
+        top: 510px;
+        width: 186px;
+        height: 186px;
+    }
+    .post_heading {
+        width: 100%;
+    }
+}

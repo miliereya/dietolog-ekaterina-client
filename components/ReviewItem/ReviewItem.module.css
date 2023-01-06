@@ -1,0 +1,39 @@
+.slide_wrapper {
+    padding: 20px;
+}
+
+.slide_wrapper:focus {
+    outline: none;
+}
+
+.slide {
+    width: 350;
+    height: 530px;
+    padding: 30px;
+    margin-right: 30px;
+    background: rgba(255, 255, 255, 0.8);
+    box-shadow: 3px 5px 15px rgba(148, 180, 159, 0.2);
+    backdrop-filter: blur(10px);
+    border-radius: 0px 0px 300px 300px;
+}
+
+.name {
+    font-size: 22px;
+    line-height: 27px;
+    letter-spacing: 0.02em;
+    color: var(--color-span);
+}
+
+.date {
+    margin-top: 30px;
+    font-size: 18px;
+    line-height: 130%;
+    letter-spacing: 0.02em;
+    color: var(--color-secondary);
+}
+
+.text {
+    margin-top: 30px;
+    line-height: 150%;
+    letter-spacing: 0.02em;
+}

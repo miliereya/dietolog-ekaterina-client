@@ -1,0 +1,95 @@
+.btn {
+	position: relative;
+	display: flex;
+	align-items: center;
+	width: 225px;
+	height: 150px;
+	transition: 0.3s ease;
+}
+
+.btn:hover,
+.btn:disabled,
+.btn:focus {
+	opacity: 0.7;
+	outline: none;
+}
+
+.btn:hover .arrow,
+.btn:focus .arrow {
+	margin-left: 150px;
+}
+
+.btn:disabled .arrow {
+	margin-left: 150px;
+}
+
+.text {
+	width: 150px;
+	height: 150px;
+    padding: 5px;
+	border-radius: 50%;
+	font-weight: 700;
+	line-height: 120%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	letter-spacing: 0.02em;
+	color: var(--color-white);
+	background-color: var(--color-secondary);
+	z-index: 3;
+}
+
+.arrow {
+	position: absolute;
+	margin-left: 140px;
+	transition: 0.3s ease;
+}
+
+@media (max-width: 1024px) {
+	.btn {
+		width: 165px;
+		height: 130px;
+	}
+	.arrow {
+		margin-left: 100px;
+	}
+	.text {
+		width: 130px;
+		height: 130px;
+		font-size: 14px;
+	}
+	.btn:hover .arrow,
+	.btn:focus .arrow {
+		margin-left: 120px;
+	}
+
+	.btn:disabled .arrow {
+		margin-left: 120px;
+	}
+}
+
+@media (max-width: 768px) {
+	.btn {
+		width: 160px;
+		height: 100px;
+	}
+	.text {
+		width: 100px;
+		height: 100px;
+        font-size: 12px;
+	}
+	.arrow {
+		width: 65px;
+		height: 17px;
+		margin-left: 70px;
+	}
+	.btn:hover .arrow,
+	.btn:focus .arrow {
+		margin-left: 100px;
+	}
+
+	.btn:disabled .arrow {
+		margin-left: 100px;
+	}
+}
+

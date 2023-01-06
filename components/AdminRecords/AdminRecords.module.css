@@ -1,0 +1,63 @@
+.section {
+    width: 100%;
+    min-height: 420px;
+}
+
+.record_wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    gap: 10px;
+}
+
+.heading {
+    text-align: center;
+    font-size: 28px;
+    text-decoration: underline;
+}
+
+.record {
+    width: 300px;
+    padding: 5px 10px;
+    border-radius: 10px;
+    border: 2px solid rgb(117, 29, 217);
+}
+
+.text {
+    margin: 14px 0;
+    font-size: 16px;
+}
+
+.text span {
+    font-weight: 700;
+}
+
+.btn {
+    border-radius: 5px;
+    padding: 2px;
+    border: none;
+    color: rgb(117, 29, 217);
+    font-weight: 700;
+    text-decoration: underline;
+}
+
+.paggination_wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+.paggination_button {
+    margin: 0 3px;
+    padding: 5px 6px;
+    border-radius: 3px;
+    background-color: white;
+    color: grat;
+    border: 2px solid gray;
+}
+
+.btn_filter {
+    border: none;
+}

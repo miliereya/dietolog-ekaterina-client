@@ -1,0 +1,534 @@
+.section {
+    position: relative;
+    background-color: var(--color-white);
+    padding-top: 90px;
+    padding-bottom: 90px;
+    border-radius: 0px 0px 400px 0px;
+}
+
+.background_2 {
+    position: absolute;
+    top: 150px;
+    right: 0;
+}
+
+.top_wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.col_1 {
+    width: 48%;
+    z-index: 9;
+}
+
+.col_2 {
+    position: relative;
+    width: 45%;
+    display: flex;
+    justify-content: space-between;
+    width: 416px;
+    margin-top: 240px;
+}
+
+.worth_background {
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    top: -135px;
+    left: -200px;
+    background: rgba(252, 248, 232, 0.7);
+    filter: blur(75px);
+}
+
+.heading {
+    font-size: 34px;
+    line-height: 41px;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    color: var(--color-span);
+    z-index: 5;
+}
+
+.col_1_description {
+    margin-top: 60px;
+    line-height: 150%;
+    letter-spacing: 0.02em;
+}
+
+.worth {
+    z-index: 3;
+}
+
+.worth_num {
+    font-family: 'mr_HamiltoneG';
+    font-size: 110px;
+    line-height: 26px;
+    color: var(--color-secondary);
+    text-align: center;
+}
+
+.worth_text {
+    margin-top: 20px;
+    line-height: 150%;
+    text-align: center;
+    letter-spacing: 0.02em;
+    color: var(--color-span);
+}
+
+.for_who_section {
+    position: relative;
+    margin-top: 89px;
+}
+
+.background_1 {
+    position: absolute;
+    width: 710px;
+    height: 100%;
+    padding: 25px 25px 25px 0;
+    border-top: 1px solid var(--color-border);
+    border-right: 1px solid var(--color-border);
+    border-bottom: 1px solid var(--color-border);
+    left: 0;
+    border-radius: 0 405px 405px 0;
+}
+
+.for_who_col {
+    width: 50%;
+    margin-left: 50%;
+}
+
+.for_who_enum {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    margin-top: 60px;
+    margin-bottom: 90px;
+    width: 100%;
+    height: 607px;
+}
+
+.for_who_wrapper {
+    position: relative;
+}
+
+.for_who_text {
+    line-height: 150%;
+    z-index: 3;
+}
+
+.for_who_num_1,
+.for_who_num_2,
+.for_who_num_3,
+.for_who_num_4,
+.for_who_num_5,
+.for_who_num_6 {
+    position: absolute;
+    top: 20px;
+    font-family: 'mr_HamiltoneG';
+    font-size: 300px;
+    line-height: 26px;
+    color: var(--color-secondary);
+    opacity: 0.25;
+}
+
+.for_who_num_1 {
+    left: 54px;
+}
+
+.for_who_num_2 {
+    left: 263px;
+}
+
+.for_who_num_3 {
+    left: 110px;
+}
+
+.for_who_num_4 {
+    left: 358px;
+}
+
+.for_who_num_5 {
+    left: 51px;
+}
+
+.for_who_num_6 {
+    left: 257px;
+}
+
+.not_suitable_wrapper {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 60px;
+}
+
+.not_suitable_item_1 {
+    position: relative;
+    width: 42.5%;
+    z-index: 3;
+}
+
+.not_suitable_item_2 {
+    position: relative;
+    width: 50%;
+    z-index: 3;
+}
+
+.not_suitable_text {
+    line-height: 150%;
+    letter-spacing: 0.02em;
+}
+
+.not_suitable_num_1,
+.not_suitable_num_2 {
+    position: absolute;
+    font-family: 'mr_HamiltoneG';
+    font-size: 300px;
+    line-height: 26px;
+    color: var(--color-secondary);
+    opacity: 0.25;
+}
+
+.not_suitable_num_1 {
+    top: 52px;
+    left: 204px;
+}
+
+.not_suitable_num_2 {
+    left: 109px;
+}
+
+.not_suitable_background {
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    background: rgba(252, 248, 232, 0.7);
+    filter: blur(75px);
+}
+
+.btn_wrapper {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 90px;
+}
+
+.link {
+    font-size: 26px;
+    line-height: 32px;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    color: var(--color-secondary);
+    transition: 0.3s ease;
+    z-index: 3;
+}
+
+.background_3 {
+    display: none;
+}
+
+.link:hover,
+.link:focus {
+    transform: scale(1.1);
+    outline: none;
+}
+
+@media (max-width: 1440px) {
+    .background_1 {
+        left: -15%;
+    }
+}
+
+@media (max-width: 1110px) {
+    .background_1 {
+        left: -30%;
+    }
+}
+
+@media (max-width: 905px) {
+    .col_1 {
+        width: 70%;
+    }
+
+    .background_1 {
+        height: 100%;
+        left: -55%;
+        padding: 15px 15px 15px 0;
+        border-radius: 0 315px 0 0;
+    }
+
+    .top_wrapper {
+        flex-direction: column-reverse;
+        gap: 50px;
+    }
+
+    .col_2 {
+        margin-top: 0;
+    }
+
+    .col_1_description {
+        font-size: 15px;
+    }
+
+    .background_2 {
+        top: 30px;
+        width: 440px;
+        height: 706.02px;
+    }
+
+    .for_who_text {
+        font-size: 15px;
+    }
+
+    .for_who_enum {
+        margin-bottom: 75px;
+    }
+
+    .for_who_num_1,
+    .for_who_num_2,
+    .for_who_num_3,
+    .for_who_num_4,
+    .for_who_num_5,
+    .for_who_num_6 {
+        font-size: 280px;
+        line-height: 1px;
+        margin-top: 6px;
+    }
+
+    .for_who_num_3 {
+        left: 86px;
+    }
+
+    .for_who_num_4 {
+        left: 295px;
+    }
+
+    .for_who_num_6 {
+        left: 192px;
+    }
+
+    .not_suitable_wrapper {
+        flex-direction: column;
+        gap: 25px;
+    }
+
+    .not_suitable_num_1 {
+        top: 15px;
+        left: 58px;
+    }
+
+    .not_suitable_num_2 {
+        top: 18px;
+        left: 164px;
+    }
+
+    .btn_wrapper {
+        margin-top: 75px;
+        flex-direction: column;
+        gap: 50px;
+    }
+
+    .section {
+        padding-bottom: 75px;
+    }
+
+    .background_3 {
+        display: block;
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        z-index: 2;
+    }
+
+    .for_who_col {
+        width: 60%;
+        margin-left: 40%;
+    }
+
+    .not_suitable_item_1,
+    .not_suitable_item_2 {
+        width: 70%;
+    }
+}
+
+@media (max-width: 750px) {
+    .background_1 {
+        left: -65%;
+    }
+
+    .heading {
+        font-size: 28px;
+    }
+
+    .for_who_text {
+        font-size: 14px;
+    }
+
+    .for_who_enum {
+        margin-top: 40px;
+        height: fit-content;
+        gap: 20px;
+    }
+
+    .worth_background {
+        display: none;
+    }
+
+    .not_suitable_background {
+        display: none;
+    }
+}
+
+@media (max-width: 680px) {
+    .background_1 {
+        left: -75%;
+        border-radius: 0 215px 0 0;
+    }
+
+    .for_who_section {
+        margin-top: 65px;
+    }
+
+    .for_who_col {
+        width: 65%;
+        margin-left: 35%;
+    }
+}
+
+@media (max-width: 645px) {
+    .background_1 {
+        left: -85%;
+    }
+
+    .for_who_num_4 {
+        left: 160px;
+    }
+}
+
+@media (max-width: 600px) {
+    .col_1 {
+        width: 100%;
+    }
+
+    .col_2 {
+        padding-top: 15px;
+        width: 100%;
+    }
+
+    .worth {
+        width: 130px;
+    }
+
+    .heading {
+        font-size: 32px;
+        line-height: 27px;
+    }
+
+    .col_1_description {
+        margin-top: 25px;
+    }
+
+    .background_1 {
+        width: 232px;
+        height: 182px;
+        padding: 6px 6px 6px 0;
+        left: 0;
+        border-radius: 0 50% 50% 0;
+    }
+
+    .for_who_section {
+        margin-top: 30px;
+    }
+
+    .for_who_col {
+        width: 100%;
+        margin-left: 0;
+        padding-top: 200px;
+    }
+
+    .for_who_num_4 {
+        left: 330px;
+    }
+
+    .not_suitable_item_1,
+    .not_suitable_item_2 {
+        width: 100%;
+    }
+
+    .not_suitable_num_1 {
+        top: 30px;
+        left: 20%;
+    }
+
+    .not_suitable_num_2 {
+        top: 32px;
+        left: 63%;
+    }
+}
+
+@media (max-width: 500px) {
+    .col_2 {
+        padding-top: 50px;
+    }
+}
+
+@media (max-width: 475px) {
+    .heading {
+        font-size: 28px;
+    }
+
+    .not_suitable_wrapper {
+        margin-top: 30px;
+    }
+}
+
+@media (max-width: 445px) {
+    .for_who_num_4 {
+        left: 45%;
+    }
+}
+
+@media (max-width: 425px) {
+    .background_2 {
+        top: 190px;
+        width: 300px;
+        height: 600px;
+    }
+
+    .col_1_description,
+    .not_suitable_text,
+    .for_who_text {
+        font-size: 13px;
+    }
+
+    .link {
+        font-size: 19px;
+        line-height: 21px;
+    }
+
+    .btn_wrapper {
+        margin-top: 35px;
+    }
+
+    .for_who_num_2 {
+        left: 50%;
+    }
+
+    .worth {
+        width: 33%;
+    }
+
+    .worth_num {
+        font-size: 90px;
+    }
+
+    .worth_text {
+        margin-top: 10px;
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 380px) {
+    .heading {
+        font-size: 24px;
+    }
+}

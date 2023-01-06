@@ -1,0 +1,36 @@
+.response {
+	margin-top: 50px;
+	width: 536px;
+	font-size: 18px;
+	line-height: 150%;
+	letter-spacing: 0.02em;
+}
+
+@media (max-width: 768px) {
+	.popup {
+		width: 65vw;
+		padding: 20px;
+	}
+	.response {
+		width: 100%;
+		margin-top: 20px;
+		font-size: 16px;
+	}
+}
+
+@media (max-width: 475px) {
+	.popup {
+		width: 65vw;
+		padding: 20px 10px 10px;
+	}
+	.response {
+		width: 100%;
+		font-size: 14px;
+	}
+}
+
+@media (max-width: 375px) {
+	.response {
+		font-size: 13px;
+	}
+}

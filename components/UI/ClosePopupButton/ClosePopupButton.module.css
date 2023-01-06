@@ -1,0 +1,41 @@
+.btn {
+	position: absolute;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 65px;
+	height: 65px;
+	top: 20px;
+	right: 20px;
+	border-radius: 50%;
+	color: var(--color-span);
+	transition: 0.2s ease;
+}
+
+.img {
+	width: 25px;
+	height: 25px;
+	transition: 0.2s ease;
+}
+
+.btn:hover .img {
+	width: 32px;
+	height: 32px;
+}
+
+@media (max-width: 768px) {
+	.btn {
+		width: 35px;
+		height: 35px;
+	}
+	.img {
+		width: 15px;
+		height: 15px;
+		transition: 0.2s ease;
+	}
+
+	.btn:hover .img {
+		width: 20px;
+		height: 20px;
+	}
+}
