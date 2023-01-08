@@ -117,7 +117,7 @@ export const About = () => {
                 </div>
                 <div className={s.btn_wrapper}>
                     <Link
-                        href='/education'
+                        href='/certificates'
                         className={s.link}
                     >
                         {my_education}
