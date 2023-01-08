@@ -197,4 +197,20 @@ export const en: LanguageTemplate = {
 		your_order: 'Your order',
 		chosen_params: 'Chosen parameters',
 	},
+	certificates: {
+		diplomas_heading: 'Diplomas and certificates',
+		skills_heading: 'Sharpening skills',
+		skill_1:
+			'n my work, I follow the saying of A. Lincoln "Whoever you are, be better." In addition to constant work with clients, I try to embody and improve my knowledge and skills in a variety of projects and events.',
+		skill_2:
+			'Conducting master classes and seminars, thanks to the feedback from the participants, allows you to track the real problems of people related to nutrition, and the feedback from the audience inspires further development.',
+		skill_3:
+			'A long and fruitful cooperation with the network of fitness clubs //"Sport Life"// helped to increase the level of knowledge in the field of sports nutrition.',
+		skill_4:
+			'Repeated interviews in the program "Morning with Ukraine" at the //TRK "Ukraine"// gave impetus to a thorough and in-depth study of the issues raised.',
+		skill_5:
+			'Collaboration with the Israeli health food delivery company //Foodlabriut// hones the skills of working with menus and cooking schemes. And also this is another plus in the treasury of knowledge of the national cuisines of the world.',
+		skill_6:
+			'Drawing lessons in the art workshop //"ART-COSMOS"// with the artist //Alena DZYUBA-PANASYUK// help develop creative abilities. Still, compiling a menu for customers is also a creative process.',
+	},
 }

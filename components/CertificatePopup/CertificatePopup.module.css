@@ -1,0 +1,21 @@
+.img {
+    max-width: 85vw;
+    height: 80vh;
+    padding-top: 45px;
+}
+
+@media (max-width: 812px) {
+    .img {
+        width: 90vw;
+        height: inherit;
+        padding-top: 45px;
+    }
+}
+
+@media (max-width: 562px) {
+    .img {
+        width: 90vw;
+        height: inherit;
+        padding-top: 45px;
+    }
+}

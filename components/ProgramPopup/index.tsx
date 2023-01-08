@@ -1,3 +1,4 @@
+import { useRouter } from 'next/router'
 import { Dispatch, FC, SetStateAction, useEffect, useState } from 'react'
 import { MainService } from '../../api/default/mainService'
 import { GlobalContext } from '../../context/mainContext'
@@ -48,6 +49,8 @@ export const ProgramPopup: FC<ProgramPopupProps> = ({
 		invalid_email,
 		invalid_phone,
 	} = language.sign_for_consult
+
+	const router = useRouter()
 
 	const orderHandler = async () => {
 		try {
@@ -104,6 +107,7 @@ export const ProgramPopup: FC<ProgramPopupProps> = ({
 			await MainService.orderProgram(props)
 			closeHandler()
 			setResPopupToggle(true)
+			router.push('/')
 		} catch (e) {
 			setResponseError(true)
 			setResPopupToggle(true)

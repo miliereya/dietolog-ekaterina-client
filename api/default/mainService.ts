@@ -60,4 +60,12 @@ export const MainService = {
 			throw e
 		}
 	},
+	async fetchCertificates() {
+		try {
+			const res = await instance.get(`/certificates`)
+			return res.data
+		} catch (e: any) {
+			throw e
+		}
+	},
 }

@@ -126,6 +126,14 @@
 .order_wrapper_mobile {
 	display: none;
 }
+
+.right_btn_wrapper {
+	height: 100%;
+	padding-bottom: 37px;
+	display: flex;
+	flex-direction: column-reverse;
+}
+
 @media (max-width: 1200px) {
 	.order_wrapper {
 		width: 530px;

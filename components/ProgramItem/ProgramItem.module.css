@@ -1,10 +1,8 @@
 .section {
-	margin-top: 71px;
 	position: relative;
 }
 .background {
-	position: absolute;
-	margin-top: 2px;
+	position: absolute;	
 	width: 505px;
 	height: 1899px;
 	z-index: -1;

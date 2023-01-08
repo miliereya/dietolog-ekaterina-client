@@ -14,6 +14,7 @@ export const PreparedSolutions = () => {
 	const [programs, setPrograms] = useState<IProgram[]>([])
 	const [isLoading, setLoading] = useState<boolean>(false)
 	const [error, setError] = useState<boolean>(false)
+	const [innerWidth, setInnerWidth] = useState(0)
 
 	useEffect(() => {
 		const fetchPrograms = async () => {
@@ -28,6 +29,18 @@ export const PreparedSolutions = () => {
 			}
 		}
 		fetchPrograms()
+	}, [])
+
+	useEffect(() => {
+		const handleWindowResize = () => {
+			setInnerWidth(window.innerWidth)
+		}
+		setTimeout(() => handleWindowResize(), 10)
+		window.addEventListener('resize', handleWindowResize)
+
+		return () => {
+			window.removeEventListener('resize', handleWindowResize)
+		}
 	}, [])
 
 	const {
@@ -160,7 +173,9 @@ export const PreparedSolutions = () => {
 						</div>
 					</div>
 
-					<p className={s.heading}>{programs_and_checks}</p>
+					<p className={s.heading} id='programs'>
+						{programs_and_checks}
+					</p>
 				</div>
 				<div
 					className={s.slider_wrapper}
@@ -168,7 +183,7 @@ export const PreparedSolutions = () => {
 						overflow: 'hidden',
 					}}
 				>
-					<div className='container'>
+					<div className='slider_container'>
 						<div className={s.slider}>
 							<CustomSlider>
 								{programs.map((p) => {
@@ -196,8 +211,13 @@ export const PreparedSolutions = () => {
 										</SwiperSlide>
 									)
 								})}
+								{innerWidth <= 878 && (
+									<SwiperSlide className={s.slide}></SwiperSlide>
+								)}
 							</CustomSlider>
 						</div>
+					</div>
+					<div className='container'>
 						<button className={s.link}>{help_to_pick}</button>
 					</div>
 				</div>

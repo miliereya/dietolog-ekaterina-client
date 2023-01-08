@@ -30,7 +30,7 @@ export const CustomSlider: FC<PropsWithChildren> = ({ children }) => {
 			window.removeEventListener('resize', handleWindowResize)
 		}
 	}, [])
-
+	
 	return (
 		<>
 			<Swiper
@@ -38,8 +38,7 @@ export const CustomSlider: FC<PropsWithChildren> = ({ children }) => {
 				onBeforeInit={(swiper) => {
 					swiperRef.current = swiper
 				}}
-				spaceBetween={innerWidth > 877 ? 50 : innerWidth > 710 ? 40 : 15}
-				slidesPerView={innerWidth > 510 ? 3 : 2}
+				slidesPerView={3}
 				speed={250}
 				direction='horizontal'
 				

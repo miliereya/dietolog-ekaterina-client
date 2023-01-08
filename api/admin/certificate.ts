@@ -7,6 +7,7 @@ export const CertificateService = {
 			await a_instance.post('/certificates/create', {
 				...props,
 			})
+			alert('Добавлено')
 		} catch (e: any) {
 			alert('Ошибка')
 		}

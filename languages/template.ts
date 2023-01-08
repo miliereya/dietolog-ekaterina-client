@@ -173,4 +173,15 @@ export interface LanguageTemplate {
 		your_order: string
 		chosen_params: string
 	}
+
+	certificates: {
+		diplomas_heading: string
+		skills_heading: string
+		skill_1: string
+		skill_2: string
+		skill_3: string
+		skill_4: string
+		skill_5: string
+		skill_6: string
+	}
 }

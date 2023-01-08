@@ -138,7 +138,7 @@ export const ProgramItem: FC<ProgramItemProps> = ({ program }) => {
 						onClick={() => setPopupToggle(true)}
 						disabled={!isEveryPropFilled}
 					/>
-					<Link href='/'>
+					<Link href='/#programs'>
 						<p className={s.link}>{back_to_programs}</p>
 					</Link>
 				</div>
