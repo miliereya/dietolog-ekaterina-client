@@ -41,7 +41,7 @@
 }
 
 .slide:hover {
-	transform: scale(1.02);
+	margin-top: 30px;
 }
 
 .slide:hover .icon_arrow_wrapper {
