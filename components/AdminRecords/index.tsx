@@ -7,7 +7,7 @@ import s from './AdminRecords.module.css'
 
 export const AdminRecords = () => {
     const [records, setRecords] = useState<IRecord[]>([])
-    const [choosenPage, setChoosenPage] = useState<number>(1)
+    const [chosenPage, setChosenPage] = useState<number>(1)
 
     const step = 6
 
@@ -30,7 +30,7 @@ export const AdminRecords = () => {
             
             <div className={s.record_wrapper}>
                 {records.map((r, index) => {
-                    if (index < choosenPage * step - step || index > choosenPage * step - 1) return
+                    if (index < chosenPage * step - step || index > chosenPage * step - 1) return
                     const { _id, name, phone, email, isApplyed, createdAt } = r
                     return (
                         <div className={s.record} key={_id}>
@@ -48,12 +48,12 @@ export const AdminRecords = () => {
                         <button
                             key={num}
                             className={s.paggination_button}
-                            style={num === choosenPage ? {
+                            style={num === chosenPage ? {
                                 backgroundColor: 'white',
                                 color: 'rgb(117, 29, 217)',
                                 border: '2px solid rgb(117, 29, 217)'
                             } : {}}
-                            onClick={() => (setChoosenPage(num), window.scrollTo(0, 0))}
+                            onClick={() => (setChosenPage(num), window.scrollTo(0, 0))}
                         >
                             {num}
                         </button>

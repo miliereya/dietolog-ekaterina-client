@@ -196,6 +196,11 @@
 	letter-spacing: 0.02em;
 	text-transform: uppercase;
 	color: var(--color-secondary);
+	transition: 0.2s;
+}
+
+.link:hover {
+	padding-top: 10px;
 }
 
 @media (max-width: 1440px) {

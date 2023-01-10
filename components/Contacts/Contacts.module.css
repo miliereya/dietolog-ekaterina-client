@@ -324,6 +324,10 @@
 }
 
 @media (max-width: 425px) {
+        .heading {
+        font-size: 22px;
+        margin-bottom: 25px;
+    }
     .speech_wrapper {
         padding: 6px;
     }
@@ -349,10 +353,6 @@
 }
 
 @media (max-width: 375px) {
-    .heading {
-        font-size: 22px;
-        margin-bottom: 25px;
-    }
     .phone {
         font-size: 15px;
     }

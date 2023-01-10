@@ -168,7 +168,7 @@ const Certificates = () => {
 				</div>
 			</div>
 			<div className='container'>
-				<Link href='/'>
+				<Link href="/#who-i-don't-work-with">
 					<p className={s.link}>{language.global._return}</p>
 				</Link>
 			</div>

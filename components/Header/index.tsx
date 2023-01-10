@@ -35,7 +35,7 @@ export const Header = () => {
         link: string
     }
 
-    const navLinks: navLinkInterface[] = [{ title: main, link: '' }, { title: about, link: 'about' }, { title: consults_and_rates, link: 'consults' }, { title: turnkey_solutions, link: 'prepared-solutions' }, { title: contacts, link: 'contacts' },]
+    const navLinks: navLinkInterface[] = [{ title: main, link: '' }, { title: about, link: '#about' }, { title: consults_and_rates, link: 'consults' }, { title: turnkey_solutions, link: '#prepared-solutions' }, { title: contacts, link: '#contacts' },]
 
     const burgerHandler = () => {
         if (isBurgerActive) {

@@ -15,9 +15,9 @@ import s from './CustomSlider.module.css'
 
 export const CustomSlider: FC<PropsWithChildren> = ({ children }) => {
 	const swiperRef = useRef<SwiperType>()
-	const [innerWidth, setInnerWidth] = useState(
-		0
-	)
+	const [innerWidth, setInnerWidth] = useState(0)
+	const [currentSlide, setCurrentSlide] = useState<number>(0)
+	const [slides, setSlides] = useState<number>(0)
 
 	useEffect(() => {
 		const handleWindowResize = () => {
@@ -30,7 +30,7 @@ export const CustomSlider: FC<PropsWithChildren> = ({ children }) => {
 			window.removeEventListener('resize', handleWindowResize)
 		}
 	}, [])
-	
+
 	return (
 		<>
 			<Swiper
@@ -41,7 +41,7 @@ export const CustomSlider: FC<PropsWithChildren> = ({ children }) => {
 				slidesPerView={3}
 				speed={250}
 				direction='horizontal'
-				
+				onSlideChange={(e) => [setSlides(e.slides.length), setCurrentSlide(e.realIndex)]}
 			>
 				{children}
 			</Swiper>
@@ -49,6 +49,7 @@ export const CustomSlider: FC<PropsWithChildren> = ({ children }) => {
 				<button
 					onClick={() => swiperRef.current?.slidePrev()}
 					className={s.btn_prev}
+					disabled={currentSlide === 0}
 				>
 					<img
 						className={s.arrow_icon}
@@ -59,6 +60,7 @@ export const CustomSlider: FC<PropsWithChildren> = ({ children }) => {
 				<button
 					onClick={() => swiperRef.current?.slideNext()}
 					className={s.btn_next}
+					disabled={currentSlide === slides-3}
 				>
 					<img
 						className={s.arrow_icon}

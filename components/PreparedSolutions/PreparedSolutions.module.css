@@ -521,7 +521,7 @@
 
 @media (max-width: 510px) {
 	.slider {
-		width: 100% !important;
+		width: 195vw;
 	}
 	.slide {
 		margin-right: 0;
@@ -540,10 +540,19 @@
 		padding-left: 10px;
 	}
 }
-
+@media (max-width: 475px) {
+	.slider {
+		width: 200vw;
+	}
+	.slide {
+		margin-top: 20px;
+		margin-right: 20px;
+		margin-left: 10px;
+	}
+}
 @media (max-width: 450px) {
 	.slider {
-		width: 186vw;
+		width: 210vw;
 	}
 	.img,
 	.slide,
@@ -558,19 +567,25 @@
 
 @media (max-width: 410px) {
 	.slider {
-		width: 196vw;
+		width: 254vw;
 	}
 }
 
 @media (max-width: 375px) {
 	.slider {
-		width: 215vw;
+		width: 280vw;
 	}
 }
 
 @media (max-width: 345px) {
 	.slider {
-		width: 235vw;
+		width: 295vw;
+	}
+}
+
+@media (max-width: 335px) {
+	.slider {
+		width: 310vw;
 	}
 }
 

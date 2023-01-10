@@ -3,6 +3,12 @@
 	z-index: 9;
 	width: 20px;
 	height: 40px;
+	transition: 0.2s;
+}
+
+.btn_next:disabled,
+.btn_prev:disabled {
+	opacity: 0.4;
 }
 
 .btn_prev {
@@ -20,7 +26,8 @@
 	transition: 0.2s;
 }
 
-.arrow_icon:hover {
+.btn_next:hover:not([disabled]),
+.btn_prev:hover:not([disabled]) {
 	transform: scale(1.3);
 }
 

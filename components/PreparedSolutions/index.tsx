@@ -66,7 +66,7 @@ export const PreparedSolutions = () => {
 	} = GlobalContext().language.prepared_solutions
 
 	return (
-		<div className={s.section}>
+		<div className={s.section} id='prepared-solutions'>
 			<img
 				src='/prepared_solutions/background_3.png'
 				alt='background'
@@ -218,8 +218,14 @@ export const PreparedSolutions = () => {
 						</div>
 					</div>
 					<div className='container'>
-						<button className={s.link}>{help_to_pick}</button>
+						<button
+							onClick={() => alert('Will be added soon')}
+							className={s.link}
+						>
+							{help_to_pick}
+						</button>
 					</div>
+					<div id='contacts'></div>
 				</div>
 			</div>
 		</div>
